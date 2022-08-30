@@ -1,16 +1,16 @@
-export const App = () => {
+import Header from "./modules/Header/Header";
+
+import UserRoutes from "./UserRoutes";
+
+import './styles/styles.css'
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="App">
+      <Header />
+      <UserRoutes />
     </div>
   );
 };
+
+export default App
